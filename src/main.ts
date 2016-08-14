@@ -16,13 +16,12 @@ import '@angular/router';
 import 'rxjs';
 
 import { enableProdMode } from '@angular/core';
-import { bootstrap } from '@angular/platform-browser-dynamic';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { HTTP_PROVIDERS } from '@angular/http';
 
-import { AppComponent } from './app/app.component';
+import { AppModule } from './app/app.module';
 
 // const ENV_PROVIDERS = [];
 enableProdMode();
 
-bootstrap(AppComponent, [HTTP_PROVIDERS])
-	.catch(err => console.error(err));
+platformBrowserDynamic().bootstrapModule(AppModule);

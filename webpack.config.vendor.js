@@ -13,6 +13,7 @@ module.exports = {
 			'./node_modules/zone.js/dist/zone',
 			'./node_modules/reflect-metadata',
 			'./node_modules/ts-helpers',
+			'./node_modules/bootstrap',
 			// Angular 2
 			'./node_modules/rxjs',
 			'./node_modules/@angular/platform-browser',

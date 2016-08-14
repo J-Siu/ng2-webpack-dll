@@ -58,7 +58,9 @@ npm run build
 `npm run build` will use webpack.config.app.js to transiple your Angular2 application. 
 
 ## ChangeLog
-- 2.0.0-rc4 - Use Angular2 RC4
+- 2.0.0-RC4 - Use Angular2 RC4
+- 2.0.0-RC4-fix - Fix webpack config files
+- 2.0.0-RC5 - Use Angular2 RC5
 
 ## Thank You
 
