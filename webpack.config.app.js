@@ -1,13 +1,11 @@
-//var path = require('path');
 var webpack = require('webpack');
-var root = __dirname;
-
 // Webpack Plugins
-//var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
-//var autoprefixer = require('autoprefixer');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
+
+var root = __dirname;
+
 
 module.exports = {
 	entry: { 'app': './src/main.ts' },

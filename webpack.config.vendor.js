@@ -1,8 +1,8 @@
 var webpack = require('webpack');
-var helpers = require('./config/helpers');
-//var webpackMerge = require('webpack-merge');
+// Webpack Plugins
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+var root = __dirname;
 const ENV = process.env.NODE_ENV = process.env.ENV = 'production';
 
 module.exports = {
@@ -24,7 +24,7 @@ module.exports = {
 		]
 	},
 	output: {
-		path: helpers.root('src'),
+		path: root + '/src',
 		filename: 'public/js/[name].js',
 		library: '[name]'
 	},
