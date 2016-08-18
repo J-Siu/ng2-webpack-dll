@@ -2,14 +2,6 @@
 	"name": "starter-ng2-dll",
 	"description": "This project aim to be a basic starting point to create Angular2 application using a vendor dll (vendor.js) containing the base Angular2 modules.",
 	"version": "2.0.0-rc.5",
-	"scripts": {
-		"clean": "rimraf node_modules dist && npm cache clean",
-		"clean-install": "npm run clean && npm install",
-		"build": "rimraf dist && webpack --progress --colors --profile --bail --display-error-details --optimize-minimize --optimize-occurrence-order --optimize-dedupe --config webpack.config.app.js",
-		"vendor": "webpack --progress --colors --profile --bail --display-error-details --optimize-minimize --optimize-occurrence-order --optimize-dedupe --config webpack.config.vendor.js",
-		"start": "webpack-dev-server --inline --progress --colors --port 8080 --config webpack.config.app.js",
-		"typings": "typings install"
-	},
 	"author": {
 		"name": "John, Sing Dao, Siu",
 		"email": "js@johnsiu.com",
@@ -31,6 +23,14 @@
 		"url": "git+https://github.com/J-Siu/Angular-2-Vendor-Dll.git"
 	},
 	"license": "MIT",
+	"scripts": {
+		"clean": "rimraf node_modules dist && npm cache clean",
+		"clean-install": "npm run clean && npm install",
+		"build": "rimraf dist && webpack --progress --colors --profile --bail --display-error-details --config webpack.config.app.js",
+		"vendor": "webpack --progress --colors --profile --bail --display-error-details --config webpack.config.vendor.js",
+		"start": "webpack-dev-server --inline --progress --colors --port 8080 --config webpack.config.app.js",
+		"postinstall" : "typings install"
+	},
 	"dependencies": {
 		"@angular/common": "2.0.0-rc.5",
 		"@angular/compiler": "2.0.0-rc.5",
