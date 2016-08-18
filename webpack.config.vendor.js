@@ -75,7 +75,12 @@ module.exports = {
 	plugins: [
 		new webpack.NoErrorsPlugin(),
 		new webpack.optimize.DedupePlugin(),
-		new webpack.optimize.UglifyJsPlugin(),
+		new webpack.optimize.UglifyJsPlugin({
+			mangle: false,
+			comments: false,
+			compress: true,
+			sourceMap: true
+		}),
 		new webpack.DllPlugin({
 			path: './src/public/js/[name]-manifest.json',
 			name: "[name]"

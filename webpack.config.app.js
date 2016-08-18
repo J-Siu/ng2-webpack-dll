@@ -54,9 +54,13 @@ module.exports = {
 			manifest: require('./src/public/js/vendor-manifest.json')
 		}),
 		new webpack.NoErrorsPlugin(),
-
 		new webpack.optimize.DedupePlugin(),
-		new webpack.optimize.UglifyJsPlugin(),
+		new webpack.optimize.UglifyJsPlugin({
+			mangle: false,
+			comments: false,
+			compress: true,
+			sourceMap: true
+		}),
 		new CopyWebpackPlugin([{
 			from: root + '/src/public'
 		}])
