@@ -49,7 +49,7 @@ npm run build
 ### Files
 ##### webpack.config.vendor.js
 
-`npm run vendor` will use webpack.config.ng2-dll.js to create vendor.js, and put it into src/public/js/.
+`npm run vendor` will use webpack.config.vendor.js to create vendor.js, and put it into src/public/js/.
 
 >__To inculde more modules in vendor.js, modify `webpack.config.vendor.js`, `src/main.ts` and `package.json`.__
 
@@ -61,6 +61,10 @@ npm run build
 - 2.0.0-RC4 - Use Angular2 RC4
 - 2.0.0-RC4-fix - Fix webpack config files
 - 2.0.0-RC5 - Use Angular2 RC5
+- 2.0.0-RC5-V2
+	- webpack.config.*.js: Set `mangle:false` for webpack.optimize.UglifyJsPlugin. [NG2 RC5 issue 10618](https://github.com/angular/angular/issues/10618)
+	- package.json: Use `postinstall` for typings install
+	- Update app to demostrate Angular2 module import
 
 ## Thank You
 
