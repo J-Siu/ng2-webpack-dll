@@ -17,11 +17,7 @@ import 'rxjs';
 
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { HTTP_PROVIDERS } from '@angular/http';
 
 import { AppModule } from './app/app.module';
-
-// const ENV_PROVIDERS = [];
-enableProdMode();
 
 platformBrowserDynamic().bootstrapModule(AppModule);
