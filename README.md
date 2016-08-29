@@ -15,8 +15,8 @@ This project aim to be a basic starting point to create Angular2 application usi
 ### Usage
 Git clone
 ```
-git clone https://github.com/J-Siu/Angular-2-Vendor-Dll.git
-cd Angular-2-Vendor-Dll
+git clone https://github.com/J-Siu/ng2-webpack-dll.git
+cd ng2-webpack-dll
 ```
 
 Install global packages:

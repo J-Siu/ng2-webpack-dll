@@ -1,5 +1,5 @@
 {
-	"name": "starter-ng2-dll",
+	"name": "ng2-webpack-dll",
 	"description": "This project aim to be a basic starting point to create Angular2 application using a vendor dll (vendor.js) containing the base Angular2 modules.",
 	"version": "2.0.0-rc.5",
 	"author": {
