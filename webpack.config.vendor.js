@@ -22,6 +22,21 @@ module.exports = {
 			'./node_modules/@angular/common',
 			'./node_modules/@angular/http',
 			'./node_modules/@angular/router'
+			/*
+						'./node_modules/bootstrap/dist/js/bootstrap.min.js',
+						'./node_modules/es6-shim/es6-shim.min.js',
+						'./node_modules/reflect-metadata/Reflect.js',
+						'./node_modules/ts-helpers',
+						'./node_modules/zone.js/dist/zone.min.js',
+						// Angular 2
+						'./node_modules/rxjs/bundles/Rx.min.js',
+						'./node_modules/@angular/common/bundles/common.umd.min.js',
+						'./node_modules/@angular/core/bundles/core.umd.min.js',
+						'./node_modules/@angular/http/bundles/http.umd.min.js',
+						'./node_modules/@angular/platform-browser/bundles/platform-browser.umd.min.js',
+						'./node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.min.js',
+						'./node_modules/@angular/router/bundles/router.umd.min.js'
+			*/
 		]
 	},
 	output: {
@@ -75,12 +90,15 @@ module.exports = {
 	plugins: [
 		new webpack.NoErrorsPlugin(),
 		new webpack.optimize.DedupePlugin(),
+		/*
 		new webpack.optimize.UglifyJsPlugin({
 			mangle: false,
 			comments: false,
 			compress: true,
 			sourceMap: true
 		}),
+		*/
+		new webpack.optimize.UglifyJsPlugin(),
 		new webpack.DllPlugin({
 			path: './src/public/js/[name]-manifest.json',
 			name: "[name]"

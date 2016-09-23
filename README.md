@@ -53,18 +53,25 @@ npm run build
 
 >__To inculde more modules in vendor.js, modify `webpack.config.vendor.js`, `src/main.ts` and `package.json`.__
 
-##### webpack.config.app.js 
+##### webpack.config.app.js
 
-`npm run build` will use webpack.config.app.js to transiple your Angular2 application. 
+`npm run build` will use webpack.config.app.js to transiple your Angular2 application.
 
 ## ChangeLog
-- 2.0.0-RC4 - Use Angular2 RC4
-- 2.0.0-RC4-fix - Fix webpack config files
-- 2.0.0-RC5 - Use Angular2 RC5
+- 2.0.0-RC4
+	- Use Angular2 RC4
+- 2.0.0-RC4-fix
+	- Fix webpack config files
+- 2.0.0-RC5
+	- Use Angular2 RC5
 - 2.0.0-RC5-V2
 	- webpack.config.*.js: Set `mangle:false` for webpack.optimize.UglifyJsPlugin. [NG2 RC5 issue 10618](https://github.com/angular/angular/issues/10618)
 	- package.json: Use `postinstall` for typings install
 	- Update app to demostrate Angular2 module import
+- 2.0.0 - Use
+	- Use Angular2 2.0.0
+	- Use default settings for uglify in webpack.config.vendor.js
+	- Add simple-api-client-ng2 to test rxjs operators
 
 ## Thank You
 
