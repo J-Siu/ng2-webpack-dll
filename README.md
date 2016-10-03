@@ -1,3 +1,8 @@
+# Discontinued Notice
+The latest and continuous development of [angular-cli](https://github.com/angular/angular-cli), has basically mark this project obsolete.
+
+[angular-cli](https://github.com/angular/angular-cli) is able to do everything this project is doing, doing it better and with a lot of other features related to Angular2 development.
+
 # Starter - Angular 2 Vendor Dll
 
 ## Introduction
@@ -49,9 +54,9 @@ npm run build
 ### Files
 ##### webpack.config.vendor.js
 
-`npm run vendor` will use webpack.config.vendor.js to create vendor.js, and put it into src/public/js/.
+`npm run vendor` will use webpack.config.vendor.js to create vendor.js, and put it into *src/public/js/*.
 
->__To inculde more modules in vendor.js, modify `webpack.config.vendor.js`, `src/main.ts` and `package.json`.__
+>__To include more modules in vendor.js, modify `webpack.config.vendor.js`, `src/main.ts` and `package.json`.__
 
 ##### webpack.config.app.js
 
@@ -67,7 +72,7 @@ npm run build
 - 2.0.0-RC5-V2
 	- webpack.config.*.js: Set `mangle:false` for webpack.optimize.UglifyJsPlugin. [NG2 RC5 issue 10618](https://github.com/angular/angular/issues/10618)
 	- package.json: Use `postinstall` for typings install
-	- Update app to demostrate Angular2 module import
+	- Update app to demonstrate Angular2 module import
 - 2.0.0 - Use
 	- Use Angular2 2.0.0
 	- Use default settings for uglify in webpack.config.vendor.js
