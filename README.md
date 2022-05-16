@@ -1,11 +1,25 @@
-# Discontinued Notice
-The latest and continuous development of [angular-cli](https://github.com/angular/angular-cli), has basically mark this project obsolete.
+# Angular Vendor Dll [![Paypal donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/donate/?business=HZF49NM9D35SJ&no_recurring=0&currency_code=CAD)
 
-[angular-cli](https://github.com/angular/angular-cli) is able to do everything this project is doing, doing it better and with a lot of other features related to Angular2 development.
+> The latest and continuous development of [angular-cli](https://github.com/angular/angular-cli), has basically mark this project obsolete.
 
-# Starter - Angular 2 Vendor Dll
+> [angular-cli](https://github.com/angular/angular-cli) is able to do everything this project is doing, doing it better and with a lot of other features related to Angular2 development.
 
-## Introduction
+### Table Of Content
+<!-- TOC -->
+
+- [Introduction](#introduction)
+- [Angular 2 Vendor Dll](#angular-2-vendor-dll)
+  - [Usage](#usage)
+  - [Files](#files)
+      - [webpack.config.vendor.js](#webpackconfigvendorjs)
+      - [webpack.config.app.js](#webpackconfigappjs)
+- [ChangeLog](#changelog)
+- [Thank You](#thank-you)
+- [License](#license)
+
+<!-- /TOC -->
+
+### Introduction
 
 Webpack's CommonsChunkPlugin is a popular way to pack vendor, polyfills modules for nodejs, npm or Angular2 project. However webpack will go through the whole vendor, polyfills tree each time you recompile your project.
 
@@ -13,11 +27,11 @@ Webpack's Dll and DllReference plugins come in as a rescue. You can read the fol
 
 [Optimizing Webpack build times and improving caching with DLL bundles](https://robertknight.github.io/posts/webpack-dll-plugins/)
 
-## Angular 2 Vendor Dll
+### Angular 2 Vendor Dll
 
 This project aim to be a basic starting point to create Angular2 application using a vendor dll (vendor.js) containing the base Angular2 modules.
 
-### Usage
+#### Usage
 Git clone
 ```
 git clone https://github.com/J-Siu/ng2-webpack-dll.git
@@ -51,18 +65,18 @@ Build
 npm run build
 ```
 
-### Files
-##### webpack.config.vendor.js
+#### Files
+###### webpack.config.vendor.js
 
 `npm run vendor` will use webpack.config.vendor.js to create vendor.js, and put it into *src/public/js/*.
 
 >__To include more modules in vendor.js, modify `webpack.config.vendor.js`, `src/main.ts` and `package.json`.__
 
-##### webpack.config.app.js
+###### webpack.config.app.js
 
-`npm run build` will use webpack.config.app.js to transiple your Angular2 application.
+`npm run build` will use webpack.config.app.js to transpile your Angular2 application.
 
-## ChangeLog
+### ChangeLog
 - 2.0.0-RC4
 	- Use Angular2 RC4
 - 2.0.0-RC4-fix
@@ -78,11 +92,11 @@ npm run build
 	- Use default settings for uglify in webpack.config.vendor.js
 	- Add simple-api-client-ng2 to test rxjs operators
 
-## Thank You
+### Thank You
 
 This project is heavily inspired by [AngularClass/angular2-webpack-starter](https://github.com/AngularClass/angular2-webpack-starter)
 
-## License
+### License
 
 The MIT License
 
